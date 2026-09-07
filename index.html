@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Dilip Barmate | Marriage Profile & Biodata</title>
+    <meta name="description" content="Official marriage profile and biodata of Akshay Dilip Barmate - Software Developer in Pune, Mechanical Engineering Graduate (2019 batch).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ambient Background Particles Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-symbol">AB</span>
+                <span class="logo-text">Akshay Barmate</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link active"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#details" class="nav-link"><i class="fa-solid fa-list-check"></i> Details</a>
+                <a href="#gallery" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a>
+                <a href="#family" class="nav-link"><i class="fa-solid fa-house-chimney-heart"></i> Family</a>
+                <a href="#values" class="nav-link"><i class="fa-solid fa-heart"></i> Values</a>
+                <a href="#expectations" class="nav-link"><i class="fa-solid fa-ring"></i> Looking For</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button onclick="window.print()" class="btn btn-secondary btn-sm no-print">
+                    <i class="fa-solid fa-print"></i> PDF / Print
+                </button>
+                <a href="https://wa.me/917756909607?text=Hello%20Akshay,%20I%20came%20across%20your%20marriage%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm no-print">
+                    <i class="fa-brands fa-whatsapp"></i> Express Interest
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-backdrop"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> Official Marriage Profile
+                </div>
+                
+                <h1 class="hero-title">
+                    Akshay Dilip Barmate
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Software Developer &bull; Mechanical Engineer &bull; Job Location: Pune | Hometown: Nagpur
+                </p>
+                
+                <blockquote class="hero-quote">
+                    "A well-educated, career-oriented and family-loving individual, looking forward to building a beautiful life together based on mutual respect, understanding and companionship."
+                </blockquote>
+
+                <!-- Key Quick Highlights Bar -->
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                        <div class="highlight-data">
+                            <span class="label">Date of Birth</span>
+                            <span class="value">23 Sept 1996 (<span id="calculated-age">29</span> Yrs)</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="highlight-data">
+                            <span class="label">Profession</span>
+                            <span class="value">Software Developer</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="highlight-data">
+                            <span class="label">Education</span>
+                            <span class="value">B.E. Mechanical (2019)</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="highlight-data">
+                            <span class="label">Hometown & Job Location</span>
+                            <span class="value">Hometown: Nagpur &bull; Job: Pune</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Action Buttons -->
+                <div class="hero-actions no-print">
+                    <a href="https://wa.me/917756909607?text=Hello%20Akshay,%20I%20came%20across%20your%20marriage%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Connect on WhatsApp
+                    </a>
+                    <button class="btn btn-outline btn-lg" onclick="copyBiodataText()">
+                        <i class="fa-solid fa-copy"></i> Copy Quick Bio
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="window.print()">
+                        <i class="fa-solid fa-file-pdf"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Tabs Navigation Bar -->
+        <div class="sticky-tabs-nav no-print">
+            <button class="tab-btn active" data-target="about">🌿 About Me</button>
+            <button class="tab-btn" data-target="details">👤 Personal Details</button>
+            <button class="tab-btn" data-target="gallery">📸 Gallery</button>
+            <button class="tab-btn" data-target="family">👨‍👩‍👦 Family</button>
+            <button class="tab-btn" data-target="values">❤️ Values</button>
+            <button class="tab-btn" data-target="expectations">🌹 Partner Expectations</button>
+        </div>
+
+        <!-- About Me Section -->
+        <section class="section-container" id="about">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-leaf"></i> Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card main-bio-card glass-card">
+                    <div class="card-corner-decor"></div>
+                    <p class="bio-paragraph">
+                        I am <strong>Akshay Dilip Barmate</strong>, a Mechanical Engineering graduate from the <strong>2019 batch</strong>, currently working as a <strong>Software Developer in Pune</strong>.
+                    </p>
+                    <p class="bio-paragraph">
+                        I consider myself a sincere, responsible and grounded person who values both <strong>career growth and family relationships</strong>. Coming from a close-knit family, I believe that a successful marriage is built on mutual respect, trust, open communication and understanding.
+                    </p>
+                    <p class="bio-paragraph">
+                        Although my professional journey is in the technology sector, I come from an engineering background and continuously strive to learn, grow and build a stable, fulfilling future.
+                    </p>
+                    <p class="bio-paragraph highlight-box">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        I am looking for a life partner who is kind-hearted, understanding and supportive, with whom I can share life's achievements, challenges, happiness and experiences.
+                    </p>
+                </div>
+
+                <!-- Bio Side Highlights -->
+                <div class="about-side-features">
+                    <div class="side-feature-card glass-card">
+                        <div class="feat-icon"><i class="fa-solid fa-compass"></i></div>
+                        <div>
+                            <h4>Life Outlook</h4>
+                            <p>Grounded, progressive, with a healthy balance between modern career goals and traditional family values.</p>
+                        </div>
+                    </div>
+                    <div class="side-feature-card glass-card">
+                        <div class="feat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div>
+                            <h4>Mindset</h4>
+                            <p>Analytical yet compassionate, always eager to learn, adapt and problem-solve in both personal and professional spheres.</p>
+                        </div>
+                    </div>
+                    <div class="side-feature-card glass-card">
+                        <div class="feat-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div>
+                            <h4>Relationship Pillar</h4>
+                            <p>Mutual respect, active listening, transparent communication and unconditional emotional support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal & Career Details Section -->
+        <section class="section-container" id="details">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-id-card"></i> Key Information</span>
+                <h2 class="section-title">Personal & Professional Details</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="details-layout">
+                <!-- Personal Details Table Card -->
+                <div class="details-card glass-card">
+                    <h3 class="card-heading"><i class="fa-solid fa-user-gear"></i> Personal Particulars</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="details-table">
+                            <tbody>
+                                <tr>
+                                    <th><i class="fa-solid fa-user"></i> Full Name</th>
+                                    <td><strong>Akshay Dilip Barmate</strong></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-calendar-days"></i> Date of Birth</th>
+                                    <td>23 September 1996</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-house-user"></i> Hometown</th>
+                                    <td>Hudkeshwar Road, Nagpur – 440034</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-city"></i> Current City</th>
+                                    <td>Pune, Maharashtra</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-graduation-cap"></i> Qualification</th>
+                                    <td>B.E. – Mechanical Engineering</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-user-graduate"></i> Graduation Batch</th>
+                                    <td>2019</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-briefcase"></i> Profession</th>
+                                    <td>Software Developer</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-map-pin"></i> Job Location</th>
+                                    <td>Pune</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-indian-rupee-sign"></i> Monthly Income</th>
+                                    <td>₹65,000 approximately</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-money-bill-trend-up"></i> Annual Package</th>
+                                    <td><strong>₹7.8 Lakhs P.A.</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Career Timeline / Focus Card -->
+                <div class="career-card glass-card">
+                    <h3 class="card-heading"><i class="fa-solid fa-graduation-cap"></i> Education & Career Journey</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><i class="fa-solid fa-award"></i></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2019 Batch</span>
+                                <h4>B.E. in Mechanical Engineering</h4>
+                                <p>Completed Bachelor of Engineering with strong analytical fundamentals and problem-solving skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><i class="fa-solid fa-code"></i></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Current Role</span>
+                                <h4>Software Developer in Pune</h4>
+                                <p>Working in the tech industry in Pune, focusing on continuous learning, building software solutions, and maintaining career growth.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Compensation Overview</span>
+                                <h4>Annual Package: ₹7.8 Lakhs P.A.</h4>
+                                <p>Approx. ₹65,000 per month, providing financial stability and a solid base for future ambitions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Showcase & Gallery -->
+        <section class="section-container" id="gallery">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-camera"></i> Photo Showcase</span>
+                <h2 class="section-title">Gallery</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">Click on any photo for high-resolution fullscreen view</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="gallery-filters no-print">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="festive">Festive / Traditional</button>
+                <button class="filter-btn" data-filter="casual">Smart Casual</button>
+                <button class="filter-btn" data-filter="travel">Lifestyle / Outdoor</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Image 1: Traditional -->
+                <div class="gallery-card glass-card" data-category="festive" onclick="openLightbox('assets/images/img1.jpeg', 'Akshay in Traditional Red Kurta')">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/images/img1.jpeg" alt="Akshay Dilip Barmate - Traditional Kurta" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand expand-icon"></i>
+                            <span>View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Festive & Cultural Elegance</h4>
+                        <p><i class="fa-solid fa-shirt"></i> Maroon Silk Kurta & White Pajama</p>
+                    </div>
+                </div>
+
+                <!-- Image 2: Smart Casual / Reception -->
+                <div class="gallery-card glass-card" data-category="casual" onclick="openLightbox('assets/images/img2.jpeg', 'Akshay in Executive Casual Attire')">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/images/img2.jpeg" alt="Akshay Dilip Barmate - Smart Casual" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand expand-icon"></i>
+                            <span>View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Smart Casual & Evening Elegance</h4>
+                        <p><i class="fa-solid fa-user-tie"></i> White Shirt & Trousers</p>
+                    </div>
+                </div>
+
+                <!-- Image 3: Outdoor Mountain Summit -->
+                <div class="gallery-card glass-card" data-category="travel" onclick="openLightbox('assets/images/img3.jpeg', 'Akshay at Mountain Peak Sunset')">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/images/img3.jpeg" alt="Akshay Dilip Barmate - Outdoor Sunset" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand expand-icon"></i>
+                            <span>View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Lifestyle & Scenic Outdoors</h4>
+                        <p><i class="fa-solid fa-mountain-sun"></i> Trekking & Nature Exploration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Details Section -->
+        <section class="section-container" id="family">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-people-roof"></i> Family Background</span>
+                <h2 class="section-title">Family Details</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">Belonging to a close-knit, educated family that values togetherness, respect, and strong moral principles.</p>
+            </div>
+
+            <div class="family-grid">
+                <!-- Father Card -->
+                <div class="family-card glass-card">
+                    <div class="family-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="family-relation">Father</div>
+                    <h3 class="family-name">Mr. Dilip Barmate</h3>
+                    <p class="family-desc">Pillar of the family, guiding us with wisdom, values, and devotion.</p>
+                </div>
+
+                <!-- Mother Tribute Card -->
+                <div class="family-card glass-card tribute-card">
+                    <div class="family-icon tribute-icon"><i class="fa-solid fa-spa"></i></div>
+                    <div class="family-relation">Mother (Fond Remembrance)</div>
+                    <h3 class="family-name">Late Mrs. Suwarna Barmate</h3>
+                    <p class="family-desc">Ever remembered for her warmth, kindness, blessings, and motherly love.</p>
+                </div>
+
+                <!-- Brother Card -->
+                <div class="family-card glass-card">
+                    <div class="family-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div class="family-relation">Elder Brother</div>
+                    <h3 class="family-name">Mr. Saurabh Barmate</h3>
+                    <p class="family-meta"><strong>Status:</strong> Married | <strong>Profession:</strong> Civil Engineer</p>
+                    <p class="family-desc">Accomplished Civil Engineer, supportive brother & mentor.</p>
+                </div>
+
+                <!-- Sister-in-law Card -->
+                <div class="family-card glass-card">
+                    <div class="family-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="family-relation">Sister-in-Law</div>
+                    <h3 class="family-name">Mrs. Roshni Barmate</h3>
+                    <p class="family-desc">Brings joy, warmth, and care to our family circle.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="section-container" id="values">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-gem"></i> Guiding Principles</span>
+                <h2 class="section-title">My Core Values</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card glass-card">
+                    <div class="value-number">01</div>
+                    <div class="value-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+                    <h3>Family</h3>
+                    <p>Family is my anchor. Prioritizing family happiness, togetherness, and emotional bonding.</p>
+                </div>
+
+                <div class="value-card glass-card">
+                    <div class="value-number">02</div>
+                    <div class="value-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                    <h3>Respect</h3>
+                    <p>Treating every individual with dignity, honoring personal boundaries and thoughts.</p>
+                </div>
+
+                <div class="value-card glass-card">
+                    <div class="value-number">03</div>
+                    <div class="value-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Understanding</h3>
+                    <p>Listening with empathy, valuing open discussions, and walking in each other's shoes.</p>
+                </div>
+
+                <div class="value-card glass-card">
+                    <div class="value-number">04</div>
+                    <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Honesty</h3>
+                    <p>Building genuine trust through transparency, sincerity, and authentic communication.</p>
+                </div>
+
+                <div class="value-card glass-card">
+                    <div class="value-number">05</div>
+                    <div class="value-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Responsibility</h3>
+                    <p>Taking ownership of personal commitments, career stability, and family well-being.</p>
+                </div>
+
+                <div class="value-card glass-card">
+                    <div class="value-number">06</div>
+                    <div class="value-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>Growth</h3>
+                    <p>Striving for continuous self-improvement, professional excellence, and mutual encouragement.</p>
+                </div>
+            </div>
+
+            <div class="values-banner glass-card">
+                <i class="fa-solid fa-quote-left banner-quote-icon"></i>
+                <p class="banner-text">
+                    "I believe that a meaningful relationship is not just about finding the right person, but about <strong>growing together, supporting each other's dreams and creating a happy family filled with love and respect.</strong>"
+                </p>
+            </div>
+        </section>
+
+        <!-- Partner Expectations Section -->
+        <section class="section-container" id="expectations">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-heart-circle-check"></i> Desired Partner</span>
+                <h2 class="section-title">Looking For</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="expectations-wrapper glass-card">
+                <div class="expectations-intro">
+                    <div class="intro-badge"><i class="fa-solid fa-ring"></i> Life Partner Vision</div>
+                    <h3>Seeking a well-educated, kind-hearted & understanding life partner</h3>
+                    <p>
+                        I am looking for a partner who values relationships and family while also having her own aspirations, individuality, and personal goals.
+                    </p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-scale-balanced pillar-icon"></i>
+                        <h4>Mutual Respect</h4>
+                        <p>Valuing each other's viewpoints and celebrating individuality.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-lock pillar-icon"></i>
+                        <h4>Trust & Honesty</h4>
+                        <p>Foundation of safety, transparency, and deep emotional bond.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-brain pillar-icon"></i>
+                        <h4>Understanding</h4>
+                        <p>Empathy during life's joys, challenges, and transitions.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-face-smile-beam pillar-icon"></i>
+                        <h4>Friendship</h4>
+                        <p>Sharing laughter, honest conversations, and everyday moments.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-hands-holding-child pillar-icon"></i>
+                        <h4>Emotional Support</h4>
+                        <p>Being each other's biggest cheerleader and steady support pillar.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <i class="fa-solid fa-infinity pillar-icon"></i>
+                        <h4>Lifelong Companionship</h4>
+                        <p>Walking hand-in-hand to build a peaceful, warm, and happy future.</p>
+                    </div>
+                </div>
+
+                <div class="expectations-footer">
+                    <p><i class="fa-solid fa-sparkles"></i> The intention is to build a relationship where both partners can <strong>grow together, support each other's ambitions and create a peaceful and happy life.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quote & Closing -->
+        <section class="closing-section">
+            <div class="closing-card glass-card">
+                <div class="sparkle-icon"><i class="fa-solid fa-ring"></i></div>
+                <h3 class="quote-text">
+                    “A beautiful marriage is not about finding someone perfect, but finding someone with whom life feels more meaningful.”
+                </h3>
+                <div class="signature">
+                    <p class="sig-title">With warm regards,</p>
+                    <h4 class="sig-name">Akshay Dilip Barmate</h4>
+                    <p class="sig-loc"><i class="fa-solid fa-location-dot"></i> Hometown: Nagpur | Job Location: Pune</p>
+                </div>
+
+                <div class="closing-actions no-print">
+                    <a href="https://wa.me/917756909607?text=Hello%20Akshay,%20I%20came%20across%20your%20marriage%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Connect on WhatsApp (+91 7756909607)
+                    </a>
+                    <button class="btn btn-outline btn-lg" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i> Save / Print Profile
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Akshay Dilip Barmate &bull; Marriage Profile Biodata</p>
+            <p class="footer-subtext">Hometown: Nagpur, MS | Job Location: Pune, MS | Contact: +91 7756909607</p>
+        </div>
+    </footer>
+
+    <!-- Contact & Express Interest Modal -->
+    <div id="contact-modal" class="modal-backdrop" onclick="closeModalOnBackdrop(event, 'contact-modal')">
+        <div class="modal-content glass-card">
+            <button class="modal-close" onclick="closeModal('contact-modal')">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <h3>Connect & Express Interest</h3>
+                <p>Send a direct message on WhatsApp (+91 7756909607) or copy profile details.</p>
+            </div>
+            
+            <div class="modal-body">
+                <div class="contact-options">
+                    <a href="https://wa.me/917756909607?text=Hello%20Akshay,%20I%20came%20across%20your%20marriage%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Connect via WhatsApp (7756909607)
+                    </a>
+                    <button onclick="copyBiodataText()" class="contact-btn copy-btn">
+                        <i class="fa-solid fa-copy"></i> Copy Full Text Biodata
+                    </button>
+                    <button onclick="window.print()" class="contact-btn print-btn">
+                        <i class="fa-solid fa-file-pdf"></i> Save / Download PDF Biodata
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917756909607?text=Hello%20Akshay,%20I%20came%20across%20your%20marriage%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn no-print" title="Chat on WhatsApp (+91 7756909607)">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Lightbox Modal for Fullscreen Photos -->
+    <div id="lightbox-modal" class="modal-backdrop" onclick="closeModalOnBackdrop(event, 'lightbox-modal')">
+        <div class="lightbox-content">
+            <button class="modal-close lightbox-close" onclick="closeModal('lightbox-modal')">&times;</button>
+            <img id="lightbox-img" src="" alt="Fullscreen View">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Biodata copied to clipboard!</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+copy_images.py
+copy_session_media.js
+find_exact_photos.py
+find_photos.js
+gallery_test.html
+generate_gallery_preview.js
